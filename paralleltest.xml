@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="paralleltest" parallel="tests">
+<test name="chrome">
+<parameter name="browser" value="chrome"></parameter>
+<classes>
+<class name="testng.paralleltest"></class></classes></test>
+<test name="edge">
+<parameter name="browser" value="Edge"></parameter>
+<classes><class name="testng.paralleltest"></class></classes></test>
+  <test thread-count="2" name="Test">
+  </test> <!-- Test -->
+</suite> <!-- paralleltest -->
